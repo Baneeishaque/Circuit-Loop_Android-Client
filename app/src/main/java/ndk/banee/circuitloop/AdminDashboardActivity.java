@@ -1,13 +1,13 @@
 package ndk.banee.circuitloop;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
-import androidx.appcompat.app.AppCompatActivity;
+import ndk.utils_android1.ActivityUtils1;
+import ndk.utils_android1.ActivityWithContexts;
+import ndk.utils_android1.ButtonUtils;
 
-public class AdminDashboardActivity extends AppCompatActivity {
+public class AdminDashboardActivity extends ActivityWithContexts {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +16,11 @@ public class AdminDashboardActivity extends AppCompatActivity {
         setContentView(R.layout.admin_dashboard_activity);
         setTitle("Admin Home");
 
-        Button buttonRowMaterials = findViewById(R.id.buttonRowMaterials);
-        buttonRowMaterials.setOnClickListener(new View.OnClickListener() {
+        ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonRowMaterials, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(AdminDashboardActivity.this, RowMaterialsActivity.class));
+                ActivityUtils1.startActivity(currentActivityContext, RowMaterialsActivity.class);
             }
         });
     }

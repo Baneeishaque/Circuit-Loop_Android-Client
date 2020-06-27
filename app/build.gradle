@@ -28,6 +28,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation project(path: ':Utils_Resources:common')
+    implementation project(path: ':Utils_1:common1')
 
     testImplementation 'junit:junit:4.13'
 
