@@ -1,0 +1,12 @@
+[submodule "Utils_19"]
+	path = Utils_19
+	url = https://github.com/Baneeishaque/Android_Common_Utils_API_19.git
+[submodule "Utils_17"]
+	path = Utils_17
+	url = https://github.com/Baneeishaque/Android_Common_Utils_API_17.git
+[submodule "Utils_Debug"]
+	path = Utils_Debug
+	url = https://github.com/Baneeishaque/Android_Common_Debug_Utils.git
+[submodule "Utils_Resources"]
+	path = Utils_Resources
+	url = https://github.com/Baneeishaque/Android_Common_Resources.git
