@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Circuit Loop</string>
+    <string name="staffs">Staffs</string>
+    <string name="rowMaterials">Row Materials</string>
+    <string name="products">Products</string>
+    <string name="dialyActivities">Daily Activities</string>
+    <string name="shopOwners">Shop Owners</string>
+    <string name="rowMaterialList">Row Material List</string>
+    <string name="rowMaterialStock">Row Material Stock</string>
+    <string name="outOfStock">Out Of Stock</string>
+    <string name="belowMinimumStock">Below Minimum Stock</string>
+    <string name="list">List</string>
+    <string name="stock">Stock</string>
+</resources>
