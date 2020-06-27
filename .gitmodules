@@ -10,3 +10,6 @@
 [submodule "Utils_Resources"]
 	path = Utils_Resources
 	url = https://github.com/Baneeishaque/Android_Common_Resources.git
+[submodule "Utils_Java"]
+	path = Utils_Java
+	url = https://github.com/Baneeishaque/Java_Common_Utils.git
