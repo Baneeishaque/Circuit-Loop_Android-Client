@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CommitMessageInspectionProfile">
+    <profile version="1.0">
+      <inspection_tool class="GrazieCommit" enabled="true" level="TYPO" enabled_by_default="true" />
+    </profile>
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Utils_17" vcs="Git" />
@@ -8,6 +13,7 @@
     <mapping directory="$PROJECT_DIR$/Utils_19/Utils_16/Utils_14" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Utils_19/Utils_16/Utils_14/Utils_1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Utils_Debug" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Utils_Java" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Utils_Resources" vcs="Git" />
   </component>
 </project>
