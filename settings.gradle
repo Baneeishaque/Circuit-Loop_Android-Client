@@ -1,4 +1,4 @@
-include ':app',':Utils_19:common19',':Utils_17:common',':Utils_Debug:common',':Utils_Resources:common'
+include ':app',':Utils_19:common19',':Utils_17:common',':Utils_Debug:common',':Utils_Resources:common',':Utils_Java'
 
 include':Utils_16:common16'
 project(':Utils_16:common16').projectDir = new File(settingsDir, './Utils_19/Utils_16/common16')
