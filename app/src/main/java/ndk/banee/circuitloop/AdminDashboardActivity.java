@@ -13,7 +13,6 @@ public class AdminDashboardActivity extends ActivityWithContexts {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_dashboard_activity);
-        setTitle("Admin Home");
 
         ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonRowMaterials, v -> ActivityUtils.startActivityForClass(currentActivityContext, RowMaterialsActivity.class));
     }

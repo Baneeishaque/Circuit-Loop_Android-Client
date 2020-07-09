@@ -1,16 +1,22 @@
 package ndk.banee.circuitloop;
 
+import android.view.Menu;
+import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+import ndk.utils_android1.ActivityUtils;
 import ndk.utils_android9.activities.RecyclerViewWithToolbarAndProgressBarActivity;
 
 public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressBarActivity {
 
-    ArrayList<RowMaterialModel> rowMaterials = new ArrayList<>();
-    RawMaterialRecyclerViewAdaptor rawMaterialRecyclerViewAdaptor = new RawMaterialRecyclerViewAdaptor(rowMaterials);
+    ArrayList<RawMaterialModel> rawMaterials = new ArrayList<>();
+    RawMaterialRecyclerViewAdaptor rawMaterialRecyclerViewAdaptor = new RawMaterialRecyclerViewAdaptor(rawMaterials);
 
     @Override
     public String configureApplicationName() {
@@ -28,7 +34,7 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
     public void processJsonObjectInFetchedJsonArray(JSONObject jsonObject) {
 
         try {
-            rowMaterials.add(new RowMaterialModel(jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), jsonObject.getString("current_stock"), jsonObject.getString("minimum_stock")));
+            rawMaterials.add(new RawMaterialModel(jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), jsonObject.getString("current_stock"), jsonObject.getString("minimum_stock")));
 
         } catch (JSONException e) {
 
@@ -40,5 +46,48 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
     public void prepareRecyclerView() {
 
         recyclerView.setAdapter(rawMaterialRecyclerViewAdaptor);
+    }
+
+    @Override
+    public boolean configureSearchAction(String searchKey) {
+
+        ArrayList<RawMaterialModel> filterList = new ArrayList<>();
+
+        if (searchKey.length() > 0) {
+
+            for (int i = 0; i < rawMaterials.size(); i++) {
+
+                if (rawMaterials.get(i).getName().toLowerCase().contains(searchKey.toLowerCase())) {
+
+                    filterList.add(rawMaterials.get(i));
+                    rawMaterialRecyclerViewAdaptor.updateList(filterList);
+                }
+            }
+        } else {
+
+            rawMaterialRecyclerViewAdaptor.updateList(rawMaterials);
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        super.onCreateOptionsMenu(menu);
+
+        getMenuInflater().inflate(R.menu.menu_insert, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == R.id.action_insert) {
+
+            ActivityUtils.startActivityForClassWithFinish(currentActivityContext, RawMaterialInsertionActivity.class);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

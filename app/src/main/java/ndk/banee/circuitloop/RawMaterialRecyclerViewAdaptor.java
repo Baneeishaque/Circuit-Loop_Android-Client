@@ -13,15 +13,15 @@ import java.util.ArrayList;
 
 public class RawMaterialRecyclerViewAdaptor extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private ArrayList<RowMaterialModel> rowMaterials;
+    private ArrayList<RawMaterialModel> rowMaterials;
     private OnItemClickListener onItemClickListener;
 
-    public RawMaterialRecyclerViewAdaptor(ArrayList<RowMaterialModel> rowMaterials) {
+    public RawMaterialRecyclerViewAdaptor(ArrayList<RawMaterialModel> rowMaterials) {
 
         this.rowMaterials = rowMaterials;
     }
 
-    public void updateList(ArrayList<RowMaterialModel> rowMaterials) {
+    public void updateList(ArrayList<RawMaterialModel> rowMaterials) {
 
         this.rowMaterials = rowMaterials;
         notifyDataSetChanged();
@@ -39,7 +39,7 @@ public class RawMaterialRecyclerViewAdaptor extends RecyclerView.Adapter<Recycle
 
         if (holder instanceof ViewHolder) {
 
-            final RowMaterialModel rowMaterial = getItem(position);
+            final RawMaterialModel rowMaterial = getItem(position);
             ViewHolder genericViewHolder = (ViewHolder) holder;
 
             genericViewHolder.textViewRawMaterialName.setText(rowMaterial.getName());
@@ -62,12 +62,12 @@ public class RawMaterialRecyclerViewAdaptor extends RecyclerView.Adapter<Recycle
         this.onItemClickListener = onItemClickListener;
     }
 
-    private RowMaterialModel getItem(int position) {
+    private RawMaterialModel getItem(int position) {
         return rowMaterials.get(position);
     }
 
     public interface OnItemClickListener {
-        void onItemClick(View view, int position, RowMaterialModel agent);
+        void onItemClick(View view, int position, RawMaterialModel agent);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

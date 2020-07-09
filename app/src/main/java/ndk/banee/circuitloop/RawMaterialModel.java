@@ -1,10 +1,10 @@
 package ndk.banee.circuitloop;
 
-public class RowMaterialModel {
+public class RawMaterialModel {
 
     String id,name,measurementUnit,currentStock,minimumStock;
 
-    public RowMaterialModel(String id, String name, String measurementUnit, String currentStock, String minimumStock) {
+    public RawMaterialModel(String id, String name, String measurementUnit, String currentStock, String minimumStock) {
 
         this.id = id;
         this.name = name;

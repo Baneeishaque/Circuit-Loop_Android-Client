@@ -11,4 +11,10 @@
     <string name="belowMinimumStock">Below Minimum Stock</string>
     <string name="list">List</string>
     <string name="stock">Stock</string>
+    <string name="rawMaterialName">Raw Material Name</string>
+    <string name="rawMaterialMinimumStock">Raw Material Minimum Stock</string>
+    <string name="rawMaterialInitialStock">Raw Material Initial Stock</string>
+    <string name="_50">50</string>
+    <string name="submit">Submit</string>
+    <string name="measurementUnit">Measurement Unit</string>
 </resources>

@@ -21,14 +21,21 @@
             android:label="Raw Materials"
             android:theme="@style/AppTheme.Template.Base" />
 
-        <activity android:name=".AdminDashboardActivity">
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:label="Admin Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".RowMaterialsActivity" />
+        <activity
+            android:name=".RowMaterialsActivity"
+            android:label="Raw Materials" />
+        <activity
+            android:name=".RawMaterialInsertionActivity"
+            android:label="Insert Raw Materials" />
 
     </application>
 
