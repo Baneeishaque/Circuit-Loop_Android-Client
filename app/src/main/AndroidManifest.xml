@@ -4,23 +4,32 @@
     package="ndk.banee.circuitloop">
 
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
         <activity
             android:name=".RawMaterialListActivity"
-            android:label="Main Agents"
+            android:label="Raw Materials"
             android:theme="@style/AppTheme.Template.Base" />
+
         <activity android:name=".AdminDashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".RowMaterialsActivity" />
+
     </application>
 
 </manifest>

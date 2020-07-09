@@ -1,8 +1,10 @@
 apply plugin: 'com.android.application'
 
 android {
+
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
+    useLibrary  'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "ndk.banee.circuitloop"
@@ -12,6 +14,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex-config.pro')
     }
 
     buildTypes {
@@ -36,8 +40,10 @@ dependencies {
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation project(path: ':Utils_9:common9')
+    implementation project(path: ':Utils_Debug:common')
     implementation project(path: ':Utils_16:common16')
     implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     testImplementation 'junit:junit:4.13'
 
