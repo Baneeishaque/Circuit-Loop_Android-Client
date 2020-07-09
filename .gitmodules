@@ -13,3 +13,12 @@
 [submodule "Utils_Java"]
 	path = Utils_Java
 	url = https://github.com/Baneeishaque/Java_Common_Utils.git
+[submodule "Utils_9"]
+	path = Utils_9
+	url = https://github.com/Baneeishaque/Android_Common_Utis_9.git
+[submodule "Utils_11"]
+	path = Utils_11
+	url = https://github.com/Baneeishaque/Android_Common_Utis_11.git
+[submodule "Utils_3"]
+	path = Utils_3
+	url = https://github.com/Baneeishaque/Android_Common_Utis_3.git
