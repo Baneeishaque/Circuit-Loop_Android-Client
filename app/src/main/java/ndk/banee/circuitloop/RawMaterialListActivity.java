@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 import ndk.utils_android1.ActivityUtils;
+import ndk.utils_android16.Float_Utils;
 import ndk.utils_android9.activities.RecyclerViewWithToolbarAndProgressBarActivity;
 
 public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressBarActivity {
@@ -21,7 +22,7 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
     @Override
     public String configureApplicationName() {
 
-        return ApplicationSpecification.APPLICATION_NAME;
+        return ApplicationSpecification.applicationName;
     }
 
     @Override
@@ -31,10 +32,10 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
     }
 
     @Override
-    public void processJsonObjectInFetchedJsonArray(JSONObject jsonObject) {
+    public void processJsonObjectInFetchedJsonArray(int i, JSONObject jsonObject) {
 
         try {
-            rawMaterials.add(new RawMaterialModel(jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), jsonObject.getString("current_stock"), jsonObject.getString("minimum_stock")));
+            rawMaterials.add(new RawMaterialModel(i,jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), Float_Utils.roundOff_to_two_positions(jsonObject.getString("current_stock")), Float_Utils.roundOff_to_two_positions(jsonObject.getString("minimum_stock"))));
 
         } catch (JSONException e) {
 

@@ -2,10 +2,13 @@ package ndk.banee.circuitloop;
 
 public class RawMaterialModel {
 
-    String id,name,measurementUnit,currentStock,minimumStock;
+    int serialNumber;
+    String id, name, measurementUnit;
+    float currentStock, minimumStock;
 
-    public RawMaterialModel(String id, String name, String measurementUnit, String currentStock, String minimumStock) {
+    public RawMaterialModel(int serialNumber,String id, String name, String measurementUnit, float currentStock, float minimumStock) {
 
+        this.serialNumber=serialNumber;
         this.id = id;
         this.name = name;
         this.measurementUnit = measurementUnit;
@@ -37,19 +40,27 @@ public class RawMaterialModel {
         this.measurementUnit = measurementUnit;
     }
 
-    public String getCurrentStock() {
+    public float getCurrentStock() {
         return currentStock;
     }
 
-    public void setCurrentStock(String currentStock) {
+    public void setCurrentStock(float currentStock) {
         this.currentStock = currentStock;
     }
 
-    public String getMinimumStock() {
+    public float getMinimumStock() {
         return minimumStock;
     }
 
-    public void setMinimumStock(String minimumStock) {
+    public void setMinimumStock(float minimumStock) {
         this.minimumStock = minimumStock;
+    }
+
+    public int getSerialNumber() {
+        return serialNumber;
+    }
+
+    public void setSerialNumber(int serialNumber) {
+        this.serialNumber = serialNumber;
     }
 }

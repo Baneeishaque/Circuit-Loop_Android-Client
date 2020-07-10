@@ -15,7 +15,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-        multiDexKeepProguard file('multidex-config.pro')
     }
 
     buildTypes {
@@ -47,6 +46,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'org.javatuples:javatuples:1.2'
+    implementation 'de.codecrafters.tableview:tableview:2.8.1'
+    implementation project(path: ':Utils_3:common3')
 
     testImplementation 'junit:junit:4.13'
 }

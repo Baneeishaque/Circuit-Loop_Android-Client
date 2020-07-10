@@ -9,6 +9,6 @@ public class CircuitLoopSharedPreferences {
 
     public static SharedPreferences getSharedPreferences(Context applicationContext){
 
-        return SharedPreferencesUtils1.getSharedPreferences(applicationContext, ApplicationSpecification.APPLICATION_NAME);
+        return SharedPreferencesUtils1.getSharedPreferences(applicationContext, ApplicationSpecification.applicationName);
     }
 }

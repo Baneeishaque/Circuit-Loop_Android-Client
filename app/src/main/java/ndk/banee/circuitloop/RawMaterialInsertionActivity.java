@@ -81,6 +81,6 @@ public class RawMaterialInsertionActivity extends ActivityWithContexts {
 
     private void executeHttpPostDbInsertionRequest() {
 
-        RestInsertTaskWrapper.execute(currentActivityContext, CircuitLoopApiUtils.getHttApi(CircuitLoopApiConstants.insertRawMaterial), currentAppCompatActivity, progressBar, scrollView, ApplicationSpecification.APPLICATION_NAME, new Pair[]{new Pair<>("raw_material_name", editTextRawMaterialName.getText().toString()), new Pair<>("raw_material_measurement_unit", spinnerRawMaterialMeasurementUnit.getSelectedItem().toString()), new Pair<>("raw_material_current_stock", editTextRawMaterialInitialStock.getText().toString()), new Pair<>("raw_material_minimum_stock", editTextRawMaterialMinimumStock.getText().toString())}, editTextRawMaterialName, RawMaterialListActivity.class);
+        RestInsertTaskWrapper.execute(currentActivityContext, CircuitLoopApiUtils.getHttApi(CircuitLoopApiConstants.insertRawMaterial), currentAppCompatActivity, progressBar, scrollView, ApplicationSpecification.applicationName, new Pair[]{new Pair<>("raw_material_name", editTextRawMaterialName.getText().toString()), new Pair<>("raw_material_measurement_unit", spinnerRawMaterialMeasurementUnit.getSelectedItem().toString()), new Pair<>("raw_material_current_stock", editTextRawMaterialInitialStock.getText().toString()), new Pair<>("raw_material_minimum_stock", editTextRawMaterialMinimumStock.getText().toString())}, editTextRawMaterialName, RawMaterialListActivity.class);
     }
 }

@@ -45,7 +45,7 @@ public class RawMaterialRecyclerViewAdaptor extends RecyclerView.Adapter<Recycle
             genericViewHolder.textViewRawMaterialName.setText(rowMaterial.getName());
             genericViewHolder.textViewCurrentStock.setText("Current Stock : " + rowMaterial.getCurrentStock() + " " + rowMaterial.getMeasurementUnit());
             genericViewHolder.textViewMinimumStock.setText("Minimum Stock : " + rowMaterial.getMinimumStock() + " " + rowMaterial.getMeasurementUnit());
-            if (Double.parseDouble(rowMaterial.getCurrentStock()) < Double.parseDouble(rowMaterial.minimumStock)) {
+            if (rowMaterial.getCurrentStock() < rowMaterial.getMinimumStock()) {
 
                 genericViewHolder.constraintLayout.setBackgroundResource(R.drawable._5dp_corner_oval_red_rectangle);
             }

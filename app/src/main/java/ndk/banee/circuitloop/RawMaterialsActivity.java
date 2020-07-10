@@ -2,11 +2,13 @@ package ndk.banee.circuitloop;
 
 import android.os.Bundle;
 
+import androidx.core.util.Pair;
+
 import ndk.utils_android1.ActivityUtils;
 import ndk.utils_android1.ActivityWithContexts;
 import ndk.utils_android1.ButtonUtils;
 
-public class RowMaterialsActivity extends ActivityWithContexts {
+public class RawMaterialsActivity extends ActivityWithContexts {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,14 +24,17 @@ public class RowMaterialsActivity extends ActivityWithContexts {
 
         ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonRowMaterialStock, v -> {
 
+            ActivityUtils.startActivityForClass(currentActivityContext, RawMaterialStockActivity.class);
         });
 
         ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonOutOfStock, v -> {
 
+            ActivityUtils.startActivityForClassWithStringExtras(currentActivityContext, RawMaterialStockActivity.class, new Pair[]{new Pair<>("variant", "outOf")});
         });
 
         ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonBelowMinimumStock, v -> {
 
+            ActivityUtils.startActivityForClassWithStringExtras(currentActivityContext, RawMaterialStockActivity.class, new Pair[]{new Pair<>("variant", "belowMinimum")});
         });
     }
 }

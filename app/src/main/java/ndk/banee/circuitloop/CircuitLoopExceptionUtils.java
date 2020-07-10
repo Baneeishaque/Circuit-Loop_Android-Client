@@ -8,6 +8,6 @@ public class CircuitLoopExceptionUtils {
 
     public static void handleExceptionOnGui(Context applicationContext, Exception exception) {
 
-        ExceptionUtils.handleExceptionOnGui(applicationContext, ApplicationSpecification.APPLICATION_NAME, exception);
+        ExceptionUtils.handleExceptionOnGui(applicationContext, ApplicationSpecification.applicationName, exception);
     }
 }
