@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Payment_History"></activity>
+        <activity android:name=".Payment_view"></activity>
+        <activity android:name=".Payment_History" />
         <activity android:name=".StaffHome" />
         <activity android:name=".Shop_owner_home" />
         <activity android:name=".Owner_card_item" />
