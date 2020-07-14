@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Staff_item"></activity>
+        <activity android:name=".Owner_card_item"></activity>
+        <activity android:name=".Staff_item" />
 
         <uses-library
             android:name="org.apache.http.legacy"

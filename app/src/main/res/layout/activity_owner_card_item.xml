@@ -8,7 +8,7 @@
     android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
     android:orientation="horizontal"
-    tools:context=".Staff_item">
+    tools:context=".Owner_card_item">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -26,7 +26,7 @@
             android:layout_width="163dp"
             android:layout_height="27dp"
             android:layout_marginTop="4dp"
-            android:text="Staff code:123"
+            android:text="Owner Code : 123"
             android:textColor="#212121"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             android:layout_width="168dp"
             android:layout_height="30dp"
             android:layout_marginTop="4dp"
-            android:text="Staff pass: 555"
+            android:text="Owner pass: 555"
             android:textColor="#212121"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -48,21 +48,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:switchMinWidth="56dp"
-            android:text=""
-            android:textOff="OFF"
-            android:textOn="ON"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.925"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.538" />
+
 
         <TextView
 
@@ -70,7 +56,7 @@
             android:layout_width="123dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
-            android:text="Staff name:"
+            android:text="Owner name:"
             android:textColor="#727272"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +70,7 @@
             android:layout_width="123dp"
             android:layout_height="27dp"
             android:layout_marginTop="12dp"
-            android:text="Staff place:"
+            android:text="Owner place:"
             android:textColor="#727272"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -94,11 +80,11 @@
 
         <TextView
 
-            android:id="@+id/textViewMinimumStock"
+            android:id="@+id/OwnerPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Staff phone number"
+            android:text="Owner phone number"
             android:textColor="#727272"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -109,14 +95,6 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
-
-
-
-
-
-
-
-
 
 
 
