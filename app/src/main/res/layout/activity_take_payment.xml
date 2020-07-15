@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
-    android:layout_marginTop="10dp"
     android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
     android:orientation="horizontal"
-    tools:context=".Payment_view">
-
+    tools:context=".Take_payment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
 
@@ -97,105 +96,127 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <TextView
 
-        android:id="@+id/constraintLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginTop="160dp"
-        android:background="@drawable/_5dp_corner_oval_rectangle"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-
-            android:id="@+id/ownerCode1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="92dp"
-            android:text="Payment View"
-            android:textColor="#212121"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/paymentDuration"
         android:layout_width="0dp"
-        android:layout_height="169dp"
-        android:layout_marginTop="27dp"
-        android:background="@drawable/_5dp_corner_oval_rectangle"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="12dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:text="Duration : 15-12-20 to 12-12-20"
+        android:textColor="#212121"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+
+        android:id="@+id/netBalance"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Current Balance : 2000"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentDuration" />
+
+    <TextView
+
+        android:id="@+id/oldBalance"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="22dp"
+        android:gravity="start"
+        android:text="Old Balance : 2000"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout1">
+        app:layout_constraintTop_toBottomOf="@+id/netBalance" />
 
-        <TextView
+    <TextView
 
-            android:id="@+id/ownerCode2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Old balance : 20050"
-            android:textColor="#212121"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-
-            android:id="@+id/ownerCode3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Current balance : 20050"
-            android:textColor="#212121"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ownerCode2" />
-
-        <TextView
-
-            android:id="@+id/ownerCode5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Net balance : 20050"
-            android:textColor="#212121"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.48"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ownerCode3" />
+        android:id="@+id/netBalance1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Net Balance : 2000"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oldBalance" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+
+        android:id="@+id/CurrentBalance"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Received Amount :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
+
+
+    <TextView
+
+        android:id="@+id/CurrentBalance2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="start"
+        android:text="Outstanding Balance : 2000"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
 
     <Button
-        android:id="@+id/buttonDailyActivities"
+        android:id="@+id/buttonSubmit"
+        style="?android:textAppearanceSmall"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="@drawable/shape_button"
-        android:text="Take Payment"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
