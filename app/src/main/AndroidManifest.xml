@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Add_Staff"></activity>
+        <activity android:name=".Add_Row_material_purchase_activity"></activity>
+        <activity android:name=".Add_Staff" />
         <activity android:name=".Products" />
         <activity android:name=".Admin_Home" />
         <activity android:name=".Add_Product_Sale_Activity" />
