@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    tools:context=".Add__InCash">
+
+    <TextView
+
+        android:id="@+id/CurrentBalance"
+        android:layout_width="374dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|start"
+        android:text="Date : 20-20-2018 Time : 10:10 AM"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance11"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Account :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance" />
+
+
+    <TextView
+
+        android:id="@+id/CurrentBalance112"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Particulars :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance11" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="nos"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance2112"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Amounts :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance112" />
+
+    <EditText
+        android:id="@+id/editTextNumb2er5"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="amounts"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance2112" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
