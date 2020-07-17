@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Add__InCash"></activity>
+        <activity android:name=".Add_OutCash"></activity>
+        <activity android:name=".Add__InCash" />
         <activity android:name=".Add_OutCash_Transaction" />
         <activity android:name=".Add_Incash_Transaction" />
         <activity android:name=".Add_Expence" />
