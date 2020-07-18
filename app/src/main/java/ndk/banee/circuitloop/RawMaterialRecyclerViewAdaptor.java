@@ -81,8 +81,8 @@ public class RawMaterialRecyclerViewAdaptor extends RecyclerView.Adapter<Recycle
 
             super(itemView);
 
-            this.textViewRawMaterialName = itemView.findViewById(R.id.textViewRawMaterialName);
-            this.textViewCurrentStock = itemView.findViewById(R.id.textViewCurrentStock);
+            this.textViewRawMaterialName = itemView.findViewById(R.id.ownerCode);
+            this.textViewCurrentStock = itemView.findViewById(R.id.ownerName);
             this.textViewMinimumStock = itemView.findViewById(R.id.textViewMinimumStock);
             this.constraintLayout = itemView.findViewById(R.id.constraintLayout);
 

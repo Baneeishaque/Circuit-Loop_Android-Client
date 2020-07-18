@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    tools:context=".Add_Supplier">
+
+
+    <TextView
+
+        android:id="@+id/CurrentBalance"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|start"
+        android:text="Supplier Name :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance1"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Supplier Place"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance" />
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance2"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Phone Number"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance1" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance3"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="User Name"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance2" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance4"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Password"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance3" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance54"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Supplier Password"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance4" />
+
+    <EditText
+        android:id="@+id/editTextNumber45"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber4" />
+
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance54" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

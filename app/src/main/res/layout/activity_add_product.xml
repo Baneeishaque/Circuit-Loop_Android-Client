@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    tools:context=".add_product">
+
+    <TextView
+
+        android:id="@+id/CurrentBalance112"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:gravity="center|start"
+        android:text="Product Name :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance1"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Measurement unit : "
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance112" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+
+    <TextView
+
+        android:id="@+id/CurrentBalance1112"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Initial Stock :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance1" />
+
+    <EditText
+        android:id="@+id/editTextNumber45"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="nos"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+    <TextView
+
+        android:id="@+id/CurrentBalance4112"
+        android:layout_width="166dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|start"
+        android:text="Product Name :"
+        android:textColor="#212121"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance1112" />
+
+    <EditText
+        android:id="@+id/editTextNu4mber5"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="nos"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber45" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentBalance4112" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
