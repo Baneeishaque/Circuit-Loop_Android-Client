@@ -17,11 +17,11 @@
         android:layout_height="57dp"
         android:layout_marginTop="20dp"
         android:gravity="center|start"
-        android:text="Date : 20-20-2018 Time : 10:10 AM"
+        android:text="@string/date_20_20_2018_time_10_10_am"
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance" />
 
     <Spinner
@@ -60,7 +60,7 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance11" />
 
     <EditText
@@ -83,11 +83,11 @@
         android:layout_height="48dp"
         android:layout_marginTop="25dp"
         android:gravity="center|start"
-        android:text="Amounts :"
+        android:text="@string/amounts"
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance112" />
 
     <EditText
@@ -98,10 +98,11 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
-        android:hint="amounts"
+        android:hint="@string/amounts1"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber5"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button3"

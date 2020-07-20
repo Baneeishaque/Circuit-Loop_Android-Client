@@ -17,4 +17,7 @@
     <string name="_50">50</string>
     <string name="submit">Submit</string>
     <string name="measurementUnit">Measurement Unit</string>
+    <string name="date_20_20_2018_time_10_10_am">Date : 20-20-2018 Time : 10:10 AM</string>
+    <string name="amounts">Amounts :</string>
+    <string name="amounts1">amounts</string>
 </resources>

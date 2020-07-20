@@ -21,7 +21,7 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/netBalance1" />
 
     <TextView
@@ -35,7 +35,7 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance" />
 
     <Spinner
@@ -60,13 +60,15 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance11" />
 
     <EditText
         android:id="@+id/editTextNumber5"
         android:layout_width="204dp"
         android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
@@ -74,6 +76,7 @@
         android:hint="nos"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CurrentBalance112"
         app:layout_constraintTop_toBottomOf="@+id/spinner1" />
 
     <TextView
@@ -87,7 +90,7 @@
         android:textColor="#212121"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="100dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CurrentBalance112" />
 
     <EditText
