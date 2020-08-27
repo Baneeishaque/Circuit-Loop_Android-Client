@@ -11,14 +11,18 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Resources" />
+            <option value="$PROJECT_DIR$/Utils11" />
+            <option value="$PROJECT_DIR$/Utils3" />
+            <option value="$PROJECT_DIR$/Utils9/Resources/common" />
+            <option value="$PROJECT_DIR$/Utils9/Utils3/common3" />
             <option value="$PROJECT_DIR$/Utils_1" />
-            <option value="$PROJECT_DIR$/Utils_11" />
-            <option value="$PROJECT_DIR$/Utils_11/common11" />
             <option value="$PROJECT_DIR$/Utils_14" />
             <option value="$PROJECT_DIR$/Utils_16" />
             <option value="$PROJECT_DIR$/Utils_17" />
             <option value="$PROJECT_DIR$/Utils_17/common" />
             <option value="$PROJECT_DIR$/Utils_19" />
+            <option value="$PROJECT_DIR$/Utils_19/Utils_16/Utils11/common11" />
             <option value="$PROJECT_DIR$/Utils_19/Utils_16/Utils_14/Utils_1/common1" />
             <option value="$PROJECT_DIR$/Utils_19/Utils_16/Utils_14/common14" />
             <option value="$PROJECT_DIR$/Utils_19/Utils_16/common16" />
@@ -32,8 +36,6 @@
             <option value="$PROJECT_DIR$/Utils_Debug" />
             <option value="$PROJECT_DIR$/Utils_Debug/common" />
             <option value="$PROJECT_DIR$/Utils_Java" />
-            <option value="$PROJECT_DIR$/Utils_Resources" />
-            <option value="$PROJECT_DIR$/Utils_Resources/common" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
