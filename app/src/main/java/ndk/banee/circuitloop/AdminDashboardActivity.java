@@ -2,7 +2,7 @@ package ndk.banee.circuitloop;
 
 import android.os.Bundle;
 
-import ndk.utils_android1.ActivityUtils;
+import ndk.utils_android1.ActivityUtils1;
 import ndk.utils_android1.ActivityWithContexts;
 import ndk.utils_android1.ButtonUtils;
 
@@ -14,6 +14,6 @@ public class AdminDashboardActivity extends ActivityWithContexts {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_dashboard_activity);
 
-        ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonRowMaterials, v -> ActivityUtils.startActivityForClass(currentActivityContext, RawMaterialsActivity.class));
+        ButtonUtils.associateClickAction(currentAppCompatActivity, R.id.buttonRowMaterials, v -> ActivityUtils1.startActivityForClass(currentActivityContext, RawMaterialsActivity.class));
     }
 }

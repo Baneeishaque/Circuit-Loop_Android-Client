@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 import ndk.utils_android1.ActivityWithContexts;
-import ndk.utils_android1.ExceptionUtils;
+import ndk.utils_android1.ExceptionUtils1;
 import ndk.utils_android16.Float_Utils;
 import ndk.utils_android3.HttpApiSelectTask3;
 import ndk.utils_android3.HttpApiSelectTaskWrapper3;
@@ -86,7 +86,7 @@ public class RawMaterialStockActivity extends ActivityWithContexts {
 
                 } catch (JSONException exception) {
 
-                    ExceptionUtils.handleExceptionOnGui(getApplicationContext(), ApplicationSpecification.applicationName, exception);
+                    ExceptionUtils1.handleExceptionOnGui(getApplicationContext(), ApplicationSpecification.applicationName, exception);
                 }
             }
 

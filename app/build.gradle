@@ -7,6 +7,7 @@ android {
     useLibrary  'org.apache.http.legacy'
 
     defaultConfig {
+
         applicationId "ndk.banee.circuitloop"
         minSdkVersion 16
         targetSdkVersion 30
@@ -18,12 +19,68 @@ android {
     }
 
     buildTypes {
+
         release {
-            minifyEnabled false
+
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        staging {
+
+            initWith release
+            debuggable true
+        }
+    }
+
+    flavorDimensions "relevence"
+    productFlavors {
+
+        // When building a variant that uses this flavor, the following configurations override those in the defaultConfig block.
+
+        development {
+
+            dimension "relevence"
+
+            // To avoid using legacy multidex when building from the command line, set minSdkVersion to 21 or higher. When using Android Studio 2.3 or higher, the build automatically avoids legacy multidex when deploying to a device running API level 21 or higher—regardless of what you set as your minSdkVersion.
+//            minSdkVersion 21
+
+            // The following configuration limits the usage of mdpi screen-density resources.
+            resConfigs "mdpi"
+        }
+
+        production {
+
+            dimension "relevence"
+            // If you've configured the defaultConfig block for the release version of your app, you can leave this block empty and Gradle uses configurations in the defaultConfig block instead. You still need to create this flavor. Otherwise, all variants use the "development" flavor configurations.
+        }
+    }
+
+    variantFilter { variant ->
+
+        def names = variant.flavors*.name
+
+        // To check for a certain build type, use variant.buildType.name == "<buildType>"
+        if (names.contains("development") && names.contains("release")) {
+
+            // Gradle ignores any variants that satisfy the conditions above.
+            setIgnore(true)
+        }
+
+        if (names.contains("production") && names.contains("debug")) {
+
+            // Gradle ignores any variants that satisfy the conditions above.
+            setIgnore(true)
+        }
+
+        if (names.contains("development") && names.contains("staging")) {
+
+            // Gradle ignores any variants that satisfy the conditions above.
+            setIgnore(true)
         }
     }
     compileOptions {
+
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }

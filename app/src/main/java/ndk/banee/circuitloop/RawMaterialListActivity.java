@@ -10,7 +10,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import ndk.utils_android1.ActivityUtils;
+import ndk.utils_android1.ActivityUtils1;
 import ndk.utils_android16.Float_Utils;
 import ndk.utils_android9.activities.RecyclerViewWithToolbarAndProgressBarActivity;
 
@@ -86,7 +86,7 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
 
         if (item.getItemId() == R.id.action_insert) {
 
-            ActivityUtils.startActivityForClassWithFinish(currentActivityContext, RawMaterialInsertionActivity.class);
+            ActivityUtils1.startActivityForClassWithFinish(currentActivityContext, RawMaterialInsertionActivity.class);
             return true;
         }
         return super.onOptionsItemSelected(item);
