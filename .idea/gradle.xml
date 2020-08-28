@@ -14,8 +14,6 @@
             <option value="$PROJECT_DIR$/Resources" />
             <option value="$PROJECT_DIR$/Utils11" />
             <option value="$PROJECT_DIR$/Utils3" />
-            <option value="$PROJECT_DIR$/Utils9/Resources/common" />
-            <option value="$PROJECT_DIR$/Utils9/Utils3/common3" />
             <option value="$PROJECT_DIR$/Utils_1" />
             <option value="$PROJECT_DIR$/Utils_14" />
             <option value="$PROJECT_DIR$/Utils_16" />
@@ -29,9 +27,9 @@
             <option value="$PROJECT_DIR$/Utils_19/Utils_16/tests16" />
             <option value="$PROJECT_DIR$/Utils_19/common19" />
             <option value="$PROJECT_DIR$/Utils_19/tests19" />
-            <option value="$PROJECT_DIR$/Utils_3" />
-            <option value="$PROJECT_DIR$/Utils_3/common3" />
             <option value="$PROJECT_DIR$/Utils_9" />
+            <option value="$PROJECT_DIR$/Utils_9/Resources/common" />
+            <option value="$PROJECT_DIR$/Utils_9/Utils3/common3" />
             <option value="$PROJECT_DIR$/Utils_9/common9" />
             <option value="$PROJECT_DIR$/Utils_Debug" />
             <option value="$PROJECT_DIR$/Utils_Debug/common" />
