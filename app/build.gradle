@@ -106,5 +106,5 @@ dependencies {
     implementation 'de.codecrafters.tableview:tableview:2.8.1'
     implementation project(path: ':Utils3:common3')
 
-    testImplementation 'junit:junit:4.13'
+    testImplementation 'junit:junit:4.13.2'
 }
