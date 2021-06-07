@@ -94,7 +94,7 @@ dependencies {
     implementation project(path: ':Resources:common')
     implementation project(path: ':Utils_1:common1')
     implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     implementation project(path: ':Utils_9:common9')
     implementation project(path: ':Utils_Debug:common')
     implementation project(path: ':Utils_16:common16')
