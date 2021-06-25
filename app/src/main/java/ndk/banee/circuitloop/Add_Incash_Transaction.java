@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Add_Incash_Transaction extends AppCompatActivity {
+public class Add_InCash_Transaction extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

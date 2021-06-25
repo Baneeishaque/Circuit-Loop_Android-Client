@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
-        <activity android:name=".Add_Salary_Transaction"></activity>
+        <activity android:name=".Add_Salary_Transaction" />
         <activity android:name=".Add_OutCash" />
-        <activity android:name=".Add__InCash" />
+        <activity android:name=".Add_InCash" />
         <activity android:name=".Add_OutCash_Transaction" />
-        <activity android:name=".Add_Incash_Transaction" />
-        <activity android:name=".Add_Expence" />
+        <activity android:name=".Add_InCash_Transaction" />
+        <activity android:name=".Add_Expense" />
         <activity android:name=".Add_Row_material_purchase_activity" />
         <activity android:name=".Add_Staff" />
         <activity android:name=".Products" />
@@ -38,20 +38,17 @@
         <activity android:name=".Owner_card_item" />
         <activity android:name=".Staff_item" />
 
-        <uses-library
-            android:name="org.apache.http.legacy"
-            android:required="false" />
-
         <activity
             android:name=".RawMaterialListActivity"
             android:label="Raw Materials"
             android:theme="@style/AppTheme.Template.Base" />
+
         <activity
             android:name=".AdminDashboardActivity"
+            android:exported="true"
             android:label="Admin Home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -62,6 +59,10 @@
             android:name=".RawMaterialInsertionActivity"
             android:label="Insert Raw Materials" />
         <activity android:name=".RawMaterialStockActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
     </application>
 
 </manifest>

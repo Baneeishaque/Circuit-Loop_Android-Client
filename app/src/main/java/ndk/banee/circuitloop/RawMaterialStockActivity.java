@@ -40,6 +40,8 @@ public class RawMaterialStockActivity extends ActivityWithContexts {
 
         } else {
 
+            CircuitLoopLogUtils.debug(this.getLocalClassName() + " Intent Extras : " + intentExtras.toString());
+
             if (Objects.requireNonNull(intentExtras.getString("variant")).equals("belowMinimum")) {
 
                 setTitle("Row Materials - Below Minimum");

@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Circuit_Loop.app" target="11" />
+      <module name="Circuit_Loop.Resources.common" target="11" />
+      <module name="Circuit_Loop.Utils11.common11" target="11" />
+      <module name="Circuit_Loop.Utils3.common3" target="11" />
+      <module name="Circuit_Loop.Utils_1.common1" target="11" />
+      <module name="Circuit_Loop.Utils_14.common14" target="11" />
+      <module name="Circuit_Loop.Utils_16.common16" target="11" />
+      <module name="Circuit_Loop.Utils_16.tests16" target="11" />
+      <module name="Circuit_Loop.Utils_17.common" target="11" />
+      <module name="Circuit_Loop.Utils_19.common19" target="11" />
+      <module name="Circuit_Loop.Utils_19.tests19" target="11" />
+      <module name="Circuit_Loop.Utils_9.common9" target="11" />
+      <module name="Circuit_Loop.Utils_Debug.common" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

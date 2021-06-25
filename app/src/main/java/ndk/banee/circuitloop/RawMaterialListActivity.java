@@ -35,7 +35,7 @@ public class RawMaterialListActivity extends RecyclerViewWithToolbarAndProgressB
     public void processJsonObjectInFetchedJsonArray(int i, JSONObject jsonObject) {
 
         try {
-            rawMaterials.add(new RawMaterialModel(i,jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), Float_Utils.roundOff_to_two_positions(jsonObject.getString("current_stock")), Float_Utils.roundOff_to_two_positions(jsonObject.getString("minimum_stock"))));
+            rawMaterials.add(new RawMaterialModel(i, jsonObject.getString("id"), jsonObject.getString("name"), jsonObject.getString("measurement_unit"), Float_Utils.roundOff_to_two_positions(jsonObject.getString("current_stock")), Float_Utils.roundOff_to_two_positions(jsonObject.getString("minimum_stock"))));
 
         } catch (JSONException e) {
 

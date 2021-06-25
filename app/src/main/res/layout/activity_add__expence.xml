@@ -8,7 +8,7 @@
     android:layout_marginRight="10dp"
     android:layout_marginTop="10dp"
     android:orientation="horizontal"
-    tools:context=".Add_Expence">
+    tools:context=".Add_Expense">
 
     <TextView
 

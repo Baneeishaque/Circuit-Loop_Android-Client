@@ -3,14 +3,28 @@ apply plugin: 'com.android.application'
 android {
 
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
-    useLibrary  'org.apache.http.legacy'
+    buildToolsVersion "30.0.3"
+
+    signingConfigs {
+
+        release {
+
+            keyAlias 'snake'
+            keyPassword '9895204814'
+            storeFile file('../keystore.jks')
+            storePassword '9895204814'
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
 
         applicationId "ndk.banee.circuitloop"
+
         minSdkVersion 16
         targetSdkVersion 30
+
         versionCode 1
         versionName "1.0"
 
@@ -22,6 +36,7 @@ android {
 
         release {
 
+            signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
